@@ -47,7 +47,8 @@ Time frames are also key in the development cycle. You have limited time to code
 | Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
 | Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
 | Total | H | 6hrs| 5hrs | 5hrs |
-Code Snippet
+
+##Code Snippet
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
 
 ```
