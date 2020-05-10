@@ -1,4 +1,5 @@
-Title# Quarentine_Trivia_Time_Game
+Quarentine_Trivia_Time_Game
+
 Game Description: During these trying times everyone needs a distraction  from the reality of our world's current situation. This trivia game is full of random facts and topics for you to choice from. Fun for all age ranges. Enjoy!
 API and Data Sample
 
@@ -8,10 +9,10 @@ Wireframes
 
 MVP/PostMVP
 MVP
-1. Add CSS to make it fun/engaging
+1. Structed material in organized and challenging way
 2. Use 3/4 External API
-3.
-4.
+3. Add CSS to make it fun/engaging
+4.Ability to be interactive with audience
 
 PostMVP
 1. Add extra api for a bonus round section
@@ -20,9 +21,7 @@ PostMVP
 4. Additional CSS to make players want to engage
 
 Project Schedule
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.
-
-You are responsible for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding Saturday and Sunday.
+Meeting with Mick: Monday, 
 
 |  Day | Deliverable | Status
 |---|---| ---|
