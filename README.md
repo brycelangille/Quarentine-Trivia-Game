@@ -11,12 +11,11 @@ API and Data Sample
 
 
 **Wireframes**
-Inline-style: ![alt text] (/Users/brycelangille/General_Assembly/sei/neptune/unit_1/project/Quarentine_Trivia_Time_Game/images/0.jpg "Logo Title Text 1")
+1. https://imgur.com/gallery/YMM7caf
 
-Inline-style: ![alt text] (/Users/brycelangille/General_Assembly/sei/neptune/unit_1/project/Quarentine_Trivia_Time_Game/images/0-1.jpg "Logo Title Text 1")
+2. https://imgur.com/gallery/DG47CXr
 
-Inline-style: ![alt text] (/Users/brycelangille/General_Assembly/sei/neptune/unit_1/project/Quarentine_Trivia_Time_Game/images/0-2.jpg "Logo Title Text 1")
-
+3. https://imgur.com/T7bmeTb
 
 
 **MVP/PostMVP**
@@ -46,7 +45,7 @@ Meeting with Mick: Monday,
 |May 15| Present to the Class| Incomplete
 
 **Priority Matrix**
-
+https://imgur.com/gallery/fKZcKI6
 
 **Timeframes**
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
