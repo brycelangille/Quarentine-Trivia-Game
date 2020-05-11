@@ -2,10 +2,11 @@
 
 **Game Description:** During these trying times everyone needs a distraction  from the reality of our world's current situation. This trivia game is full of random facts and topics for you to choice from. Fun for all age ranges. Enjoy!
 
-**API:**:
-1. https://opentdb.com/api.php?amount=20&category=11&difficulty=medium&type=multiple
-2. https://opentdb.com/api.php?amount=20&category=12&difficulty=medium&type=multiple
-3. https://opentdb.com/api.php?amount=20&category=14&difficulty=medium&type=multiple
+**API:**
+1. https://opentdb.com/api_config.php
+2. https://opentdb.com/api.php?amount=20&category=11&difficulty=medium&type=multiple
+3. https://opentdb.com/api.php?amount=20&category=12&difficulty=medium&type=multiple
+4. https://opentdb.com/api.php?amount=20&category=14&difficulty=medium&type=multiple
 
 
 **Wireframes**
