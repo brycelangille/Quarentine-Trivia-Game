@@ -1,7 +1,6 @@
 **Quarentine_Trivia_Time_Game**
 
 **Game Description:** During these trying times everyone needs a distraction  from the reality of our world's current situation. This trivia game is full of random facts and topics for you to choice from. Fun for all age ranges. Enjoy!
-API and Data Sample
 
 **API:**:
 1. https://rickandmortyapi.com/documentation/#rest
@@ -32,7 +31,7 @@ API and Data Sample
 4. Additional CSS to make players want to engage
 
 **Project Schedule**
-Meeting with Mick: Monday, 
+Meeting with Mick: Monday, May 11th, 
 
 |  Day | Deliverable | Status
 |---|---| ---|
@@ -48,13 +47,14 @@ Meeting with Mick: Monday,
 https://imgur.com/gallery/fKZcKI6
 
 **Timeframes**
+
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| HTML/CSS | H | 2hrs| - | - |
-| Javascript/API| H | 4hrs|  - | - |
-| Debugging | H | 3hrs| - | - |
-| MVP/Post MVP | H | 4hrs| - | -|
-| Total | - | 13hrs|  - |  - |
+| :---: | :---: |  :---: | :---: | :---: |
+| HTML/CSS | H | 2hrs| hrs | hrs|
+| Javascript/API| H | 4hrs| hrs  | hrs |
+| Debugging | H | 3hrs| hrs | hrs |
+| MVP/Post MVP | H | 4hrs| hrs | hrs|
+| Total | M | 13hrs|  hrs |  hrs |
 
 **##API Snippet**
 Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
