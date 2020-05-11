@@ -16,8 +16,6 @@
 
 3. https://imgur.com/T7bmeTb
 
-
-**MVP/PostMVP**
 **MVP**
 1. Structed material in organized and challenging way
 2. Use 3/4 External API
