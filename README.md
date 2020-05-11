@@ -18,7 +18,7 @@
 
 **MVP**
 1. Structed material in organized and challenging way
-2. Use 3 or 4 different end points
+2. Recieve data multiple endpoints. Display data as an ingaging trivia game
 3. Add CSS to make it fun/engaging
 4. Ability to be interactive with audience
 
