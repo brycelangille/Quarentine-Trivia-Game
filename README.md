@@ -58,10 +58,9 @@ https://imgur.com/gallery/fKZcKI6
 | Total | M | 13hrs|  hrs |  hrs |
 
 **##API Snippet**
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
 
-```
 Rick and Morty API; 1. https://rickandmortyapi.com/documentation/#rest
+```
 {
     "info": {
         "count": 493,
