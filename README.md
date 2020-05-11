@@ -4,9 +4,10 @@
 
 **API:**
 1. https://opentdb.com/api_config.php
-2. https://opentdb.com/api.php?amount=20&category=11&difficulty=medium&type=multiple
-3. https://opentdb.com/api.php?amount=20&category=12&difficulty=medium&type=multiple
-4. https://opentdb.com/api.php?amount=20&category=14&difficulty=medium&type=multiple
+2. https://opentdb.com/api.php?amount=10&category=32&difficulty=easy&type=multiple (cartoon characters)
+3. https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=multiple (movie)
+4. https://opentdb.com/api.php?amount=10&category=12&difficulty=easy&type=multiple (music)
+5. https://opentdb.com/api.php?amount=10&category=14&difficulty=easy&type=multiple (tvshow)
 
 
 **Wireframes**
