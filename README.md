@@ -1,28 +1,25 @@
-**Quarentine_Trivia_Time_Game**
+**Quarantine_Trivia_Time_Game**
 
 **Game Description:** During these trying times everyone needs a distraction  from the reality of our world's current situation. This trivia game is full of random facts and topics for you to choice from. Fun for all age ranges. Enjoy!
-API and Data Sample
 
-**API:**:
-1. https://rickandmortyapi.com/documentation/#rest
-2. https://opentdb.com/api.php?amount=20&category=11&difficulty=medium&type=multiple
-3. https://opentdb.com/api.php?amount=20&category=12&difficulty=medium&type=multiple
-4. https://opentdb.com/api.php?amount=20&category=14&difficulty=medium&type=multiple
+**API:**
+1. https://opentdb.com/api_config.php
+2. https://opentdb.com/api.php?amount=10&category=32&difficulty=easy&type=multiple (cartoon characters)
+3. https://opentdb.com/api.php?amount=10&category=11&difficulty=easy&type=multiple (movie)
+4. https://opentdb.com/api.php?amount=10&category=12&difficulty=easy&type=multiple (music)
+5. https://opentdb.com/api.php?amount=10&category=14&difficulty=easy&type=multiple (tvshow)
 
 
 **Wireframes**
-Inline-style: ![alt text] (/Users/brycelangille/General_Assembly/sei/neptune/unit_1/project/Quarentine_Trivia_Time_Game/images/0.jpg "Logo Title Text 1")
+1. https://imgur.com/gallery/YMM7caf
 
-Inline-style: ![alt text] (/Users/brycelangille/General_Assembly/sei/neptune/unit_1/project/Quarentine_Trivia_Time_Game/images/0-1.jpg "Logo Title Text 1")
+2. https://imgur.com/gallery/DG47CXr
 
-Inline-style: ![alt text] (/Users/brycelangille/General_Assembly/sei/neptune/unit_1/project/Quarentine_Trivia_Time_Game/images/0-2.jpg "Logo Title Text 1")
+3. https://imgur.com/T7bmeTb
 
-
-
-**MVP/PostMVP**
 **MVP**
 1. Structed material in organized and challenging way
-2. Use 3/4 External API
+2. Recieve data multiple endpoints. Display data as an ingaging trivia game
 3. Add CSS to make it fun/engaging
 4. Ability to be interactive with audience
 
@@ -31,9 +28,10 @@ Inline-style: ![alt text] (/Users/brycelangille/General_Assembly/sei/neptune/uni
 2. Create a secound player ability
 3. Create a score board
 4. Additional CSS to make players want to engage
+5. Make app both Landscape and portiot mode for mobile
 
 **Project Schedule**
-Meeting with Mick: Monday, 
+Meeting with Mick: Monday, May 11th, 
 
 |  Day | Deliverable | Status
 |---|---| ---|
@@ -48,224 +46,17 @@ Meeting with Mick: Monday,
 **Priority Matrix**
 https://imgur.com/gallery/fKZcKI6
 
-
 **Timeframes**
+
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
-| --- | :---: |  :---: | :---: | :---: |
-| HTML/CSS | H | 2hrs| - | - |
-| Javascript/API| H | 4hrs|  - | - |
-| Debugging | H | 3hrs| - | - |
-| MVP/Post MVP | H | 4hrs| - | -|
-| Total | - | 13hrs|  - |  - |
+| :---: | :---: |  :---: | :---: | :---: |
+| HTML/CSS | H | 2hrs| hrs | hrs|
+| Javascript/API| H | 4hrs| hrs  | hrs |
+| Debugging | H | 3hrs| hrs | hrs |
+| MVP/Post MVP | H | 4hrs| hrs | hrs|
+| Total | M | 13hrs|  hrs |  hrs |
 
 **##API Snippet**
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
-
-```
-Rick and Morty API; 1. https://rickandmortyapi.com/documentation/#rest
-{
-    "info": {
-        "count": 493,
-        "pages": 25,
-        "next": "https://rickandmortyapi.com/api/character/?page=2",
-        "prev": ""
-    },
-    "results": [
-        {
-            "id": 1,
-            "name": "Rick Sanchez",
-            "status": "Alive",
-            "species": "Human",
-            "type": "",
-            "gender": "Male",
-            "origin": {
-                "name": "Earth (C-137)",
-                "url": "https://rickandmortyapi.com/api/location/1"
-            },
-            "location": {
-                "name": "Earth (Replacement Dimension)",
-                "url": "https://rickandmortyapi.com/api/location/20"
-            },
-            "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
-            "episode": [
-                "https://rickandmortyapi.com/api/episode/1",
-                "https://rickandmortyapi.com/api/episode/2",
-                "https://rickandmortyapi.com/api/episode/3",
-                "https://rickandmortyapi.com/api/episode/4",
-                "https://rickandmortyapi.com/api/episode/5",
-                "https://rickandmortyapi.com/api/episode/6",
-                "https://rickandmortyapi.com/api/episode/7",
-                "https://rickandmortyapi.com/api/episode/8",
-                "https://rickandmortyapi.com/api/episode/9",
-                "https://rickandmortyapi.com/api/episode/10",
-                "https://rickandmortyapi.com/api/episode/11",
-                "https://rickandmortyapi.com/api/episode/12",
-                "https://rickandmortyapi.com/api/episode/13",
-                "https://rickandmortyapi.com/api/episode/14",
-                "https://rickandmortyapi.com/api/episode/15",
-                "https://rickandmortyapi.com/api/episode/16",
-                "https://rickandmortyapi.com/api/episode/17",
-                "https://rickandmortyapi.com/api/episode/18",
-                "https://rickandmortyapi.com/api/episode/19",
-                "https://rickandmortyapi.com/api/episode/20",
-                "https://rickandmortyapi.com/api/episode/21",
-                "https://rickandmortyapi.com/api/episode/22",
-                "https://rickandmortyapi.com/api/episode/23",
-                "https://rickandmortyapi.com/api/episode/24",
-                "https://rickandmortyapi.com/api/episode/25",
-                "https://rickandmortyapi.com/api/episode/26",
-                "https://rickandmortyapi.com/api/episode/27",
-                "https://rickandmortyapi.com/api/episode/28",
-                "https://rickandmortyapi.com/api/episode/29",
-                "https://rickandmortyapi.com/api/episode/30",
-                "https://rickandmortyapi.com/api/episode/31"
-            ],
-            "url": "https://rickandmortyapi.com/api/character/1",
-            "created": "2017-11-04T18:48:46.250Z"
-        },
-        {
-            "id": 2,
-            "name": "Morty Smith",
-            "status": "Alive",
-            "species": "Human",
-            "type": "",
-            "gender": "Male",
-            "origin": {
-                "name": "Earth (C-137)",
-                "url": "https://rickandmortyapi.com/api/location/1"
-            },
-            "location": {
-                "name": "Earth (Replacement Dimension)",
-                "url": "https://rickandmortyapi.com/api/location/20"
-            },
-            "image": "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
-            "episode": [
-                "https://rickandmortyapi.com/api/episode/1",
-                "https://rickandmortyapi.com/api/episode/2",
-                "https://rickandmortyapi.com/api/episode/3",
-                "https://rickandmortyapi.com/api/episode/4",
-                "https://rickandmortyapi.com/api/episode/5",
-                "https://rickandmortyapi.com/api/episode/6",
-                "https://rickandmortyapi.com/api/episode/7",
-                "https://rickandmortyapi.com/api/episode/8",
-                "https://rickandmortyapi.com/api/episode/9",
-                "https://rickandmortyapi.com/api/episode/10",
-                "https://rickandmortyapi.com/api/episode/11",
-                "https://rickandmortyapi.com/api/episode/12",
-                "https://rickandmortyapi.com/api/episode/13",
-                "https://rickandmortyapi.com/api/episode/14",
-                "https://rickandmortyapi.com/api/episode/15",
-                "https://rickandmortyapi.com/api/episode/16",
-                "https://rickandmortyapi.com/api/episode/17",
-                "https://rickandmortyapi.com/api/episode/18",
-                "https://rickandmortyapi.com/api/episode/19",
-                "https://rickandmortyapi.com/api/episode/20",
-                "https://rickandmortyapi.com/api/episode/21",
-                "https://rickandmortyapi.com/api/episode/22",
-                "https://rickandmortyapi.com/api/episode/23",
-                "https://rickandmortyapi.com/api/episode/24",
-                "https://rickandmortyapi.com/api/episode/25",
-                "https://rickandmortyapi.com/api/episode/26",
-                "https://rickandmortyapi.com/api/episode/27",
-                "https://rickandmortyapi.com/api/episode/28",
-                "https://rickandmortyapi.com/api/episode/29",
-                "https://rickandmortyapi.com/api/episode/30",
-                "https://rickandmortyapi.com/api/episode/31"
-            ],
-            "url": "https://rickandmortyapi.com/api/character/2",
-            "created": "2017-11-04T18:50:21.651Z"
-        },
-        {
-            "id": 3,
-            "name": "Summer Smith",
-            "status": "Alive",
-            "species": "Human",
-            "type": "",
-            "gender": "Female",
-            "origin": {
-                "name": "Earth (Replacement Dimension)",
-                "url": "https://rickandmortyapi.com/api/location/20"
-            },
-            "location": {
-                "name": "Earth (Replacement Dimension)",
-                "url": "https://rickandmortyapi.com/api/location/20"
-            },
-            "image": "https://rickandmortyapi.com/api/character/avatar/3.jpeg",
-            "episode": [
-                "https://rickandmortyapi.com/api/episode/6",
-                "https://rickandmortyapi.com/api/episode/7",
-                "https://rickandmortyapi.com/api/episode/8",
-                "https://rickandmortyapi.com/api/episode/9",
-                "https://rickandmortyapi.com/api/episode/10",
-                "https://rickandmortyapi.com/api/episode/11",
-                "https://rickandmortyapi.com/api/episode/12",
-                "https://rickandmortyapi.com/api/episode/14",
-                "https://rickandmortyapi.com/api/episode/15",
-                "https://rickandmortyapi.com/api/episode/16",
-                "https://rickandmortyapi.com/api/episode/17",
-                "https://rickandmortyapi.com/api/episode/18",
-                "https://rickandmortyapi.com/api/episode/19",
-                "https://rickandmortyapi.com/api/episode/20",
-                "https://rickandmortyapi.com/api/episode/21",
-                "https://rickandmortyapi.com/api/episode/22",
-                "https://rickandmortyapi.com/api/episode/23",
-                "https://rickandmortyapi.com/api/episode/24",
-                "https://rickandmortyapi.com/api/episode/25",
-                "https://rickandmortyapi.com/api/episode/26",
-                "https://rickandmortyapi.com/api/episode/27",
-                "https://rickandmortyapi.com/api/episode/29",
-                "https://rickandmortyapi.com/api/episode/30",
-                "https://rickandmortyapi.com/api/episode/31"
-            ],
-            "url": "https://rickandmortyapi.com/api/character/3",
-            "created": "2017-11-04T19:09:56.428Z"
-        },
-        {
-            "id": 4,
-            "name": "Beth Smith",
-            "status": "Alive",
-            "species": "Human",
-            "type": "",
-            "gender": "Female",
-            "origin": {
-                "name": "Earth (Replacement Dimension)",
-                "url": "https://rickandmortyapi.com/api/location/20"
-            },
-            "location": {
-                "name": "Earth (Replacement Dimension)",
-                "url": "https://rickandmortyapi.com/api/location/20"
-            },
-            "image": "https://rickandmortyapi.com/api/character/avatar/4.jpeg",
-            "episode": [
-                "https://rickandmortyapi.com/api/episode/6",
-                "https://rickandmortyapi.com/api/episode/7",
-                "https://rickandmortyapi.com/api/episode/8",
-                "https://rickandmortyapi.com/api/episode/9",
-                "https://rickandmortyapi.com/api/episode/10",
-                "https://rickandmortyapi.com/api/episode/11",
-                "https://rickandmortyapi.com/api/episode/12",
-                "https://rickandmortyapi.com/api/episode/14",
-                "https://rickandmortyapi.com/api/episode/15",
-                "https://rickandmortyapi.com/api/episode/16",
-                "https://rickandmortyapi.com/api/episode/18",
-                "https://rickandmortyapi.com/api/episode/19",
-                "https://rickandmortyapi.com/api/episode/20",
-                "https://rickandmortyapi.com/api/episode/21",
-                "https://rickandmortyapi.com/api/episode/22",
-                "https://rickandmortyapi.com/api/episode/23",
-                "https://rickandmortyapi.com/api/episode/24",
-                "https://rickandmortyapi.com/api/episode/25",
-                "https://rickandmortyapi.com/api/episode/26",
-                "https://rickandmortyapi.com/api/episode/27",
-                "https://rickandmortyapi.com/api/episode/28",
-                "https://rickandmortyapi.com/api/episode/29",
-                "https://rickandmortyapi.com/api/episode/30",
-                "https://rickandmortyapi.com/api/episode/31"
-            ],
-            "url": "https://rickandmortyapi.com/api/character/4",
-            "created": "2017-11-04T19:22:43.665Z"
-        },
-```
 Movie API: https://opentdb.com/api.php?amount=10&category=11&difficulty=medium&type=multiple
 ```
 {
@@ -898,4 +689,3 @@ TV API: https://opentdb.com/api.php?amount=20&category=14&difficulty=medium&type
 ```
 
 **Change Log**
-
