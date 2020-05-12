@@ -46,6 +46,7 @@ Meeting with Mick: Monday,
 |May 15| Present to the Class| Incomplete
 
 **Priority Matrix**
+https://imgur.com/gallery/fKZcKI6
 
 
 **Timeframes**
