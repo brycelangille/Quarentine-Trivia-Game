@@ -24,11 +24,11 @@
 4. Ability to be interactive with audience
 
 **PostMVP**
-1. Add extra api for a bonus round section
-2. Create a secound player ability
-3. Create a score board
-4. Additional CSS to make players want to engage
-5. Make app both Landscape and portiot mode for mobile
+1. Add highscore
+2. Create a score board
+3. Additional CSS to make players want to engage (animation)
+4. Make app both Landscape and portiot mode for mobile
+5. Create a secound player ability
 
 **Project Schedule**
 Meeting with Mick: Monday, May 11th, 
