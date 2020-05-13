@@ -47,7 +47,7 @@ function generateGame(data) {
   const questionsDiv = document.createElement("div");
   questionsDiv.className = "questions-div";
   container.appendChild(questionsDiv);
-  questionsDiv.innerText = data[index].question.replace(/\&quot;/g, `"`).replace(/\&#039;/g, `'`).replace(/\&ntilde;/g, `ñ`).replace(/\&aacute;/g, `á`);
+  questionsDiv.innerText = data[index].question.replace(/\&quot;/g, `"`).replace(/\&#039;/g, `'`).replace(/\&amp;/g, `&`).replace(/\&ntilde;/g, `ñ`).replace(/\&aacute;/g, `á`).replace(/\&Uuml;/g, `Ü`).replace(/\&eacute;/g, `é`);
   answersArray.push(data[index].correct_answer);
   data[index].incorrect_answers.forEach((answer) => {
     answersArray.push(answer);
@@ -60,7 +60,7 @@ function generateGame(data) {
   shuffleArray(answersArray).forEach((answer) => {
     const answerP = document.createElement("p");
     answerP.className = "answer-p";
-    answerP.innerText = answer.replace(/\&quot;/g, `"`).replace(/\&#039;/g, `'`).replace(/\&amp;/g, `&`).replace(/\&ntilde;/g, `ñ`).replace(/\&aacute;/g, `á`);
+    answerP.innerText = answer.replace(/\&quot;/g, `"`).replace(/\&#039;/g, `'`).replace(/\&amp;/g, `&`).replace(/\&ntilde;/g, `ñ`).replace(/\&aacute;/g, `á`).replace(/\&uumi;/g, `Ü`).replace(/\&eacute;/g, `é`);
     answerDiv.appendChild(answerP);
     answerP.addEventListener("click", (e) => {
       checkAnswer(e.target, data[index -1].correct_answer)
