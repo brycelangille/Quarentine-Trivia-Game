@@ -32,6 +32,8 @@ async function fetchData(topic) {
 //console.log(topicSelector)
 topicSelector.addEventListener(`click`, (e) => {
   e.preventDefault();
+  let pick = document.querySelector(".pick")
+  pick.remove()
   //console.log(e.target.id);
   fetchData(e.target.id);
 });
@@ -45,11 +47,7 @@ function generateGame(data) {
   const questionsDiv = document.createElement("div");
   questionsDiv.className = "questions-div";
   container.appendChild(questionsDiv);
-  // const searchRegExp = /&quot;/;
-  // const replaceWith = `"`;
-  // const result = 'duck duck go'.replace(searchRegExp, replaceWith);
-  // data[index].question.toString().replaceAll("&quot;", `"`)
-  questionsDiv.innerText = data[index].question;
+  questionsDiv.innerText = data[index].question.replace(/\&quot;/g, `"`).replace(/\&#039;/g, `'`).replace(/\&ntilde;/g, `ñ`).replace(/\&aacute;/g, `á`);
   answersArray.push(data[index].correct_answer);
   data[index].incorrect_answers.forEach((answer) => {
     answersArray.push(answer);
@@ -62,16 +60,28 @@ function generateGame(data) {
   shuffleArray(answersArray).forEach((answer) => {
     const answerP = document.createElement("p");
     answerP.className = "answer-p";
-    answerP.innerText = answer;
+    answerP.innerText = answer.replace(/\&quot;/g, `"`).replace(/\&#039;/g, `'`).replace(/\&amp;/g, `&`).replace(/\&ntilde;/g, `ñ`).replace(/\&aacute;/g, `á`);
     answerDiv.appendChild(answerP);
     answerP.addEventListener("click", (e) => {
       checkAnswer(e.target, data[index -1].correct_answer)
       generateGame(data);
-      // playAgain()
     });
   });
+  if (index === 9) {
+    removeQuestion()
+    const menu = document.getElementById('menu')
+    menu.style.display = "block";
+  }
   index += 1;
 }
+const yes = document.getElementById('restart-button')
+    yes.addEventListener('click', () => {
+      window.location.href = './topic.html'
+    })
+      const no = document.getElementById('exit-button')
+      no.addEventListener('click', () => {
+        window.location.href = './index.html'
+    })
 
 function removeQuestion() {
   const oldQuestion = document.querySelector(".container");
@@ -91,7 +101,6 @@ function shuffleArray(answersArray) {
     shuffledAnswers[currentIndex] = shuffledAnswers[rand];
     shuffledAnswers[rand] = temp;
   }
-  // console.log(deck)
   return shuffledAnswers;
 }
 
@@ -104,11 +113,3 @@ function checkAnswer(userAnswer, correctAnswer) {
     console.log(`your wrong`);
   }
 }
-
-// function playAgain() {
-//   if (document.querySelectorAll('question').length === 0) {
-//     const playBackButton = document.addEventListener("click", (e) => {
-//       playBackButton("Want to Play again")
-//     })
-//   }
-// }
