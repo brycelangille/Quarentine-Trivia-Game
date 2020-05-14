@@ -32,8 +32,8 @@ async function fetchData(topic) {
 //console.log(topicSelector)
 topicSelector.addEventListener(`click`, (e) => {
   e.preventDefault();
-  let pick = document.querySelector(".pick")
-  pick.remove()
+  let pick = document.querySelector(".pick");
+  pick.remove();
   //console.log(e.target.id);
   fetchData(e.target.id);
 });
@@ -47,7 +47,14 @@ function generateGame(data) {
   const questionsDiv = document.createElement("div");
   questionsDiv.className = "questions-div";
   container.appendChild(questionsDiv);
-  questionsDiv.innerText = data[index].question.replace(/\&quot;/g, `"`).replace(/\&#039;/g, `'`).replace(/\&amp;/g, `&`).replace(/\&ntilde;/g, `ñ`).replace(/\&aacute;/g, `á`).replace(/\&Uuml;/g, `Ü`).replace(/\&eacute;/g, `é`);
+  questionsDiv.innerText = data[index].question
+    .replace(/\&quot;/g, `"`)
+    .replace(/\&#039;/g, `'`)
+    .replace(/\&amp;/g, `&`)
+    .replace(/\&ntilde;/g, `ñ`)
+    .replace(/\&aacute;/g, `á`)
+    .replace(/\&Uuml;/g, `Ü`)
+    .replace(/\&eacute;/g, `é`);
   answersArray.push(data[index].correct_answer);
   data[index].incorrect_answers.forEach((answer) => {
     answersArray.push(answer);
@@ -60,28 +67,40 @@ function generateGame(data) {
   shuffleArray(answersArray).forEach((answer) => {
     const answerP = document.createElement("p");
     answerP.className = "answer-p";
-    answerP.innerText = answer.replace(/\&quot;/g, `"`).replace(/\&#039;/g, `'`).replace(/\&amp;/g, `&`).replace(/\&ntilde;/g, `ñ`).replace(/\&aacute;/g, `á`).replace(/\&uumi;/g, `Ü`).replace(/\&eacute;/g, `é`);
+    answerP.innerText = answer
+      .replace(/\&quot;/g, `"`)
+      .replace(/\&#039;/g, `'`)
+      .replace(/\&amp;/g, `&`)
+      .replace(/\&ntilde;/g, `ñ`)
+      .replace(/\&aacute;/g, `á`)
+      .replace(/\&uumi;/g, `Ü`)
+      .replace(/\&eacute;/g, `é`);
     answerDiv.appendChild(answerP);
     answerP.addEventListener("click", (e) => {
-      checkAnswer(e.target, data[index -1].correct_answer)
+      checkAnswer(e.target, data[index - 1].correct_answer);
       generateGame(data);
     });
   });
   if (index === 9) {
-    removeQuestion()
-    const menu = document.getElementById('menu')
+    removeQuestion();
+    const menu = document.getElementById("menu");
     menu.style.display = "block";
   }
   index += 1;
 }
-const yes = document.getElementById('restart-button')
-    yes.addEventListener('click', () => {
-      window.location.href = './topic.html'
-    })
-      const no = document.getElementById('exit-button')
-      no.addEventListener('click', () => {
-        window.location.href = './index.html'
-    })
+const yes = document.getElementById("restart-button");
+yes.addEventListener("click", () => {
+  window.location.href = "./topic.html";
+});
+const no = document.getElementById("exit-button");
+no.addEventListener("click", () => {
+  window.location.href = "./index.html";
+});
+const highScore = localStorage.getItem("highScore");
+const currentHighScore= document.createElement('p');
+currentHighScore.innerText = `Current HighScore = ${highScore}`
+const menu = document.getElementById("menu");
+menu.appendChild(currentHighScore)
 
 function removeQuestion() {
   const oldQuestion = document.querySelector(".container");
@@ -112,4 +131,13 @@ function checkAnswer(userAnswer, correctAnswer) {
   } else {
     console.log(`your wrong`);
   }
+const highScore = localStorage.getItem("highScore");
+if (typeof highScore !== Number) {
+  localStorage.setItem("highScore", score);
+} else {
+  if (score > highScore) {
+    localStorage.setItem("highScore", score);
+  }
+}
+console.log(score);
 }
