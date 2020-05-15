@@ -2,12 +2,9 @@
   box-sizing: border-box;
   font-family: 'Balsamiq Sans', cursive;
   padding: 0;
-  margin: 0; 
+  margin: 0;
   color: black;
 }
-
-
-
 body {
     background-color: skyblue;
     image-rendering: auto, 10%;
@@ -25,21 +22,18 @@ body {
     align-content: center;
     flex-direction: column;
   }
-
   h1{
     font-size: 25px;
     text-align: relative;
     color: pink;
   }
-
   .container {
 text-align: center;
   }
-/* 
+/*
 .container.question {
   border:inherit solid black ;
 } */
-  
   button {
     width: 100%;
     background: none;
@@ -52,7 +46,6 @@ text-align: center;
     padding: 20px 60px;
     position: grid;
   }
-  
   button:hover {
     color: pink;
   }
@@ -61,7 +54,6 @@ text-align: center;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
   }
-  
   /* BUTTON 1 */
   .play::after {
     height: 0;
@@ -72,7 +64,6 @@ text-align: center;
   .play:hover:after {
     height: 100%;
   }
-
 /* https://codepen.io/ritchiejacobs/pen/qEJjBM  help me design and format my button worked off an example, just wanted acool button*/
 .questions-div{
   background: none;
@@ -87,17 +78,14 @@ text-align: center;
   padding: 20px 60px;
   position: center;
 }
-
 .questions-div:hover {
   color: pink;
 }
-
 .answer-div {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr;
 }
-
 .answer-p{
   width: 95%;
   background: none;
@@ -110,51 +98,42 @@ text-align: center;
   padding: 20px 60px;
   position: center;
 }
-
 .answer-p:hover {
   color: pink;
 }
-
 #menu {
   display: none;
 }
-
 .score{
 margin: 0;
 color: black;
 font-size: 5em;
 }
-
 .pick{
   margin-bottom: 5rem;
   font-size: 25px;
   text-align: relative;
   color: pink;
 }
-
 html,
     body {
       height: 100%;
     }
-
-  @media (max-width: 700px) {  
+  @media (max-width: 600px) {
     html,
     body {
       height: 100%;
-      width: 100%; 
       margin: auto;
       border: auto;
+      width:100%;
     }
     #topicSelector{
       display: block
   }
-
   .answer-div {
     display: block
   }
-
   .questions-div {
     display: block
   }
-
   }
