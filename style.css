@@ -68,12 +68,11 @@ text-align: center;
 
 /* https://codepen.io/ritchiejacobs/pen/qEJjBM  help me design and format my button worked off an example, just wanted acool button*/
 
-
-
   @media (min-width: 600px) {  
     html,
     body {
       height: 100%;
+      width: 100%;
     }
   }
 

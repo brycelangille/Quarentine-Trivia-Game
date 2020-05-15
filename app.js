@@ -97,10 +97,10 @@ no.addEventListener("click", () => {
   window.location.href = "./index.html";
 });
 const highScore = localStorage.getItem("highScore");
-const currentHighScore= document.createElement('p');
-currentHighScore.innerText = `Current HighScore = ${highScore}`
+const currentHighScore = document.createElement("p");
+currentHighScore.innerText = `Current HighScore = ${highScore}`;
 const menu = document.getElementById("menu");
-menu.appendChild(currentHighScore)
+menu.appendChild(currentHighScore);
 
 function removeQuestion() {
   const oldQuestion = document.querySelector(".container");
@@ -131,13 +131,13 @@ function checkAnswer(userAnswer, correctAnswer) {
   } else {
     console.log(`your wrong`);
   }
-const highScore = localStorage.getItem("highScore");
-if (typeof highScore !== Number) {
-  localStorage.setItem("highScore", score);
-} else {
-  if (score > highScore) {
+  const highScore = localStorage.getItem("highScore");
+  if (typeof highScore !== Number) {
     localStorage.setItem("highScore", score);
+  } else {
+    if (score > highScore) {
+      localStorage.setItem("highScore", score);
+    }
   }
-}
-console.log(score);
+  console.log(score);
 }
