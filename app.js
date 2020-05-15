@@ -4,6 +4,10 @@ let index = 0;
 let score = 0;
 const scoreP = document.querySelector(".score");
 scoreP.innerText = score;
+let highScore = localStorage.getItem('highScore');
+if (!highScore) {
+  localStorage.setItem('highScore', 0);
+}
 
 async function fetchData(topic) {
   let topicNumber;
@@ -127,12 +131,12 @@ function checkAnswer(userAnswer, correctAnswer) {
     console.log(`you're wrong`);
   }
   const highScore = localStorage.getItem("highScore");
-    if (score > highScore) {
-      localStorage.setItem("highScore", score);
-    }
+  if (score > highScore) {
+    localStorage.setItem("highScore", score);
   }
-const highScore = localStorage.getItem("highScore");
+}
 const currentHighScore = document.createElement("p");
+highScore = localStorage.getItem('highScore')
 currentHighScore.innerText = `Current HighScore = ${highScore}`;
 const menu = document.getElementById("menu");
 menu.appendChild(currentHighScore);
