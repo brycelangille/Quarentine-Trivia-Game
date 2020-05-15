@@ -65,13 +65,20 @@ text-align: center;
   .play:hover:after {
     height: 100%;
   }
-
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%
+  }
 /* https://codepen.io/ritchiejacobs/pen/qEJjBM  help me design and format my button worked off an example, just wanted acool button*/
 
   @media (min-width: 600px) {  
     html,
     body {
       height: 100%;
+      margin: auto;
+      border: auto;
       width: 100%;
     }
   }
