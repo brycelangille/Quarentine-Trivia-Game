@@ -1,86 +1,84 @@
 * {
   box-sizing: border-box;
-  font-family: 'Balsamiq Sans', cursive;
+  font-family: "Balsamiq Sans", cursive;
   padding: 0;
-  margin: 0; 
+  margin: 0;
   color: black;
 }
 
 body {
   background-color: skyblue;
   height: 100%;
-    margin: auto;
-    width: 50%;
-    border: 3px solid black;
+  margin: auto;
+  width: 50%;
+  border: 3px solid black;
   /* padding: 400px 400px 400px 400px; */
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 80rem;
-    text-align: center;
-    align-content: center;
-    flex-direction: column;
-  }
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  text-align: center;
+  align-content: center;
+  flex-direction: column;
+}
 
-  h1{
-    margin-bottom: 5rem;
-    font-size: 25px;
-    text-align: relative;
-    color: pink;
-  }
+h1 {
+  margin-bottom: 5rem;
+  font-size: 25px;
+  text-align: relative;
+  color: pink;
+}
 
-  .container {
-text-align: center;
-  }
+.container {
+  text-align: center;
+}
 /* 
 .container.question {
   border:inherit solid black ;
 } */
-  
-  button {
-    background: none;
-    border: 3px solid white;
-    border-radius: 5px ;
-    color: white;
-    display: block;
-    font-size: 200 px;
-    font-weight: bold;
-    margin: 1px auto;
-    padding: 20px 60px;
-    position: center;
-  }
-  
-  button:hover {
-    color: pink;
-  }
-  
-  /* BUTTON 1 */
-  .play::after {
-    height: 0;
-    left: 0;
-    top: 0;
-    width: 100%;
-  }
-  .play:hover:after {
-    height: 100%;
-  }
-  
+
+button {
+  background: none;
+  border: 3px solid white;
+  border-radius: 5px;
+  color: white;
+  display: block;
+  font-size: 200 px;
+  font-weight: bold;
+  margin: 1px auto;
+  padding: 20px 60px;
+  position: center;
+}
+
+button:hover {
+  color: pink;
+}
+
+/* BUTTON 1 */
+.play::after {
+  height: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+.play:hover:after {
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+/* https://codepen.io/ritchiejacobs/pen/qEJjBM  help me design and format my button worked off an example, just wanted acool button*/
+
+@media (min-width: 600px) {
   html,
   body {
     height: 100%;
-    width: 100%
+    margin: auto;
+    border: auto;
+    width: 100%;
   }
-/* https://codepen.io/ritchiejacobs/pen/qEJjBM  help me design and format my button worked off an example, just wanted acool button*/
-
-  @media (min-width: 600px) {  
-    html,
-    body {
-      height: 100%;
-      margin: auto;
-      border: auto;
-      width: 100%;
-    }
-  }
-
-  
+}

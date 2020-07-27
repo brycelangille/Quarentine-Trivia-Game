@@ -4,9 +4,9 @@ let index = 0;
 let score = 0;
 const scoreP = document.querySelector(".score");
 scoreP.innerText = score;
-let highScore = localStorage.getItem('highScore');
+let highScore = localStorage.getItem("highScore");
 if (!highScore) {
-  localStorage.setItem('highScore', 0);
+  localStorage.setItem("highScore", 0);
 }
 
 async function fetchData(topic) {
@@ -136,7 +136,7 @@ function checkAnswer(userAnswer, correctAnswer) {
   }
 }
 const currentHighScore = document.createElement("p");
-highScore = localStorage.getItem('highScore')
+highScore = localStorage.getItem("highScore");
 currentHighScore.innerText = `Current HighScore = ${highScore}`;
 const menu = document.getElementById("menu");
 menu.appendChild(currentHighScore);
